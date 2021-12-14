@@ -67,8 +67,11 @@
 }
 
 .serchBar {
-  background-color: rgb(167, 165, 165);
+  align-items: center;
+  background-color: rgb(223, 222, 222);
   border-radius: 0 0 0.5em 0.5em;
+  display: flex;
+  flex-direction: column;
   max-width: 800px;
   padding-top: 1vh;
   position: fixed;
@@ -77,6 +80,10 @@
   transform: translateX(50%);
   width: 100vw;
   z-index: 3;
+}
+
+.div-do-inferno {
+  height: 20px;
 }
 
 .buttonSearch {
@@ -90,8 +97,10 @@
 }
 
 .labelRadio {
+  margin-bottom: 20px;
   margin-left: 15px;
-  margin-top: 10px;
+  margin-top: 0;
+  padding: 0;
 }
 
 .radio {

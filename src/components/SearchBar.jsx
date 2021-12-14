@@ -63,7 +63,7 @@ function SearchBar() {
   };
   return (
     <div className="serchBar">
-      <div>
+      <div className="div-do-inferno">
         <input
           className="barraDeBusca"
           data-testid="search-input"
@@ -81,6 +81,7 @@ function SearchBar() {
         </button>
       </div>
       <label htmlFor="filter" className="labelRadio">
+        <br />
         <input
           className="initialRadio"
           id="ingredientes"
