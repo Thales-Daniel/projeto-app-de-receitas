@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Provider from './context/Provider';
@@ -21,7 +21,7 @@ import Detalhes from './pages/Detalhes';
 function App() {
   return (
     <Provider>
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <Route exact path="/" component={ Login } />
           <Route exact path="/comidas" component={ Comidas } />
@@ -41,7 +41,7 @@ function App() {
           <Route exact path="/receitas-favoritas" component={ TelaDeFavoritos } />
           <Route path="/" component={ NotFound } />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </Provider>
   );
 }
